@@ -122,21 +122,3 @@ Habilitar TPM (Trusted Platform Module) para cifrado de disco BitLocker, LUKS, t
 ![alt text](img/tpm.png)
 
 ![alt text](img/tpm2.png)
-
-
-## Sección 2
-Duration: 0:05:00
-
-
-### Añade un enlace
-¡Añadiendo un enlace!
-[Ejemplo de enlace](https://www.davidlms.com)
-
-### Añade una imagen
-¡Añadiendo una imagen!
-
-
-### Incrusta un iframe
-
-![https://codepen.io/tzoght/embed/yRNZaP](https://en.wikipedia.org/wiki/File:Example.jpg "Try Me Publisher")
-
