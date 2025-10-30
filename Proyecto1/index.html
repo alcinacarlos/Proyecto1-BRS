@@ -1,0 +1,106 @@
+
+<!doctype html>
+
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0, user-scalable=yes">
+  <meta name="theme-color" content="#4F7DC9">
+  <meta charset="UTF-8">
+  <title>Proyecto 1</title>
+  <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Source+Code+Pro:400|Roboto:400,300,400italic,500,700|Roboto+Mono">
+  <link rel="stylesheet" href="//fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="https://storage.googleapis.com/claat-public/codelab-elements.css">
+  <style>
+    .success {
+      color: #1e8e3e;
+    }
+    .error {
+      color: red;
+    }
+  </style>
+</head>
+<body>
+  <google-codelab-analytics gaid="UA-49880327-14"></google-codelab-analytics>
+  <google-codelab codelab-gaid=""
+                  id="Proyecto1"
+                  title="Proyecto 1"
+                  environment="web"
+                  feedback-link="https://github.com/alcinacarlos?tab=repositories">
+    
+      <google-codelab-step label="Parte 1: Guía para Bastionar la BIOS/UEFI" duration="0">
+        <h2 is-upgraded>1.1 Contraseña de usuario o Power-On</h2>
+<p>El objetivo es evitar el acceso no autorizado al equipo antes del arranque del sistema operativo.</p>
+<h3 is-upgraded>Pasos</h3>
+<p>Reinicia el ordenador y accede al menú BIOS/UEFI (usualmente presionando Supr, F2, Esc o F10 según el fabricante).</p>
+<p class="image-container"><img alt="alt text" src="img/fb96566b2e7b17dd.png"></p>
+<p>Dirígete al apartado Security o Seguridad. <img alt="alt text" src="img/c1c85a6119807380.png"></p>
+<p>Busca la opción User Password, Power-On Password o similar. <img alt="alt text" src="img/155ec73f672b9f3f.png"></p>
+<p>Introduce una contraseña segura que combine letras, números y símbolos.</p>
+<p>Guarda los cambios y reinicia el sistema. <img alt="alt text" src="img/d0058c3c6284c210.png"></p>
+<p>El sistema pedirá una contraseña antes de iniciar el arranque.</p>
+<h2 is-upgraded>1.2. Contraseña de administrador</h2>
+<p>Objetivo</p>
+<p>Restringir el acceso y las modificaciones a la configuración de la BIOS/UEFI.</p>
+<p>Pasos</p>
+<p>Ingresa nuevamente al menú BIOS/UEFI.</p>
+<p>En la sección Security, selecciona Administrator Password o Supervisor Password.</p>
+<p>Crea una contraseña diferente de la de usuario, preferiblemente más compleja.</p>
+<p>Guarda los cambios y reinicia el equipo.</p>
+<p>Resultado esperado: Solo quien conozca la contraseña de administrador podrá modificar la configuración del BIOS/UEFI.</p>
+<h2 is-upgraded>1.3. Arranques externos</h2>
+<p>Objetivo</p>
+<p>Evitar que el sistema se inicie desde dispositivos externos (USB, DVD, etc.) que puedan contener software malicioso.</p>
+<p>Pasos</p>
+<p>Accede al BIOS/UEFI.</p>
+<p>Busca la sección Boot, Boot Options o Advanced Boot Options.</p>
+<p>Desactiva la opción Boot from external devices, USB Boot o Removable Media Boot.</p>
+<p>Guarda los cambios.</p>
+<p>✅ Resultado esperado: El equipo no podrá arrancar desde medios externos sin autorización previa.</p>
+<h2 is-upgraded>1.4. Orden de arranque</h2>
+<p>Objetivo</p>
+<p>Asegurar que el sistema operativo principal sea el primero en arrancar y evitar manipulaciones.</p>
+<p>Pasos</p>
+<p>Entra al BIOS/UEFI y localiza la pestaña Boot.</p>
+<p>Establece como primera opción de arranque el disco donde está instalado el sistema operativo.</p>
+<p>Mueve cualquier otro dispositivo (USB, CD/DVD, red, etc.) al final de la lista.</p>
+<p>Guarda los cambios.</p>
+<p>✅ Resultado esperado: El sistema solo iniciará desde el disco autorizado.</p>
+<ol type="1" start="5">
+<li>Otras opciones de seguridad</li>
+</ol>
+<p>Objetivo</p>
+<p>Aplicar configuraciones adicionales que fortalezcan la seguridad general del BIOS/UEFI.</p>
+<p>Recomendaciones</p>
+<p>Activar Secure Boot: Garantiza que solo se carguen sistemas operativos y controladores firmados digitalmente.</p>
+<p>Desactivar puertos innecesarios: Deshabilita puertos como FireWire, Thunderbolt o incluso USB si no se necesitan.</p>
+<p>Habilitar TPM (Trusted Platform Module): Recomendado para cifrado de disco (BitLocker u otros).</p>
+<p>Configurar el modo de arranque: Usar UEFI Mode en lugar de Legacy Mode para una mayor protección.</p>
+<p>✅ Resultado esperado: El BIOS/UEFI cuenta con medidas adicionales que protegen la integridad y autenticidad del sistema.</p>
+<p>Conclusión</p>
+<p>Siguiendo estos pasos, la BIOS/UEFI quedará configurada de forma segura, cumpliendo con todos los criterios del nivel Bien (2 puntos) en cada indicador. Esto refuerza la protección del sistema frente a accesos no autorizados y manipulaciones en el arranque.</p>
+<p>¡Ya tienes tu lista numerada creada!</p>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="Sección 2" duration="5">
+        <h2 is-upgraded>Añade un enlace</h2>
+<p>¡Añadiendo un enlace! <a href="https://www.davidlms.com" target="_blank">Ejemplo de enlace</a></p>
+<h2 is-upgraded>Añade una imagen</h2>
+<p>¡Añadiendo una imagen!</p>
+<h2 is-upgraded>Incrusta un iframe</h2>
+<iframe class="embedded-iframe" src="https://codepen.io/tzoght/embed/yRNZaP"></iframe>
+
+
+      </google-codelab-step>
+    
+  </google-codelab>
+
+  <script src="https://storage.googleapis.com/claat-public/native-shim.js"></script>
+  <script src="https://storage.googleapis.com/claat-public/custom-elements.min.js"></script>
+  <script src="https://storage.googleapis.com/claat-public/prettify.js"></script>
+  <script src="https://storage.googleapis.com/claat-public/codelab-elements.js"></script>
+  <script src="//support.google.com/inapp/api.js"></script>
+
+</body>
+</html>
