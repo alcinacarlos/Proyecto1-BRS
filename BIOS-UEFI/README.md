@@ -1,1 +1,1 @@
-https://alcinacarlos.github.io/Proyecto1-BRS/BIOS-UEFI/bios-uefi
+https://alcinacarlos.github.io/Proyecto1-BRS/BIOS-UEFI/bios-uefi/#0
