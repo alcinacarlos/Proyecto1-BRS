@@ -146,9 +146,7 @@ Para proteger completamente los datos en caso de acceso físico no autorizado, s
 
 > Al iniciar el sistema, se te solicitará la contraseña del cifrado antes de que GRUB arranque el sistema operativo.
 
-![
-   
-](img/cifradofinal.png)
+![alt text](img/cifradofinal.png)
 ---
 
 ## 5. Resumen y buenas prácticas
@@ -156,8 +154,6 @@ Para proteger completamente los datos en caso de acceso físico no autorizado, s
 * GRUB protegido con contraseña y oculto mejora significativamente la seguridad del arranque.
 * Copias de seguridad y permisos correctos evitan pérdidas por errores de configuración.
 * Combinado con cifrado de disco y controles de BIOS/UEFI se obtiene un arranque robusto frente a accesos no autorizados.
-
-> **Imagen sugerida:** Infografía con todas las medidas de seguridad aplicadas en Debian.
 
 ---
 
