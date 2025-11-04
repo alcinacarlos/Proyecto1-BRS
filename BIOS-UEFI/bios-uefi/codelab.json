@@ -3,12 +3,12 @@
   "format": "html",
   "prefix": "https://storage.googleapis.com",
   "mainga": "UA-49880327-14",
-  "updated": "2025-10-30T10:12:42+01:00",
-  "id": "Proyecto1",
+  "updated": "2025-11-03T13:21:17+01:00",
+  "id": "bios-uefi",
   "duration": 0,
-  "title": "Proyecto 1",
-  "summary": "Proyecto1",
-  "source": "proyecto1.md",
+  "title": "Parte 1: Guía para Bastionar la BIOS/UEFI",
+  "summary": "bios-uefi",
+  "source": "bios-uefi.md",
   "theme": "",
   "status": [
     "published"
@@ -20,6 +20,5 @@
   "tags": [
     "web"
   ],
-  "feedback": "https://github.com/alcinacarlos?tab=repositories",
-  "url": "Proyecto1"
+  "url": "bios-uefi"
 }
