@@ -1,0 +1,180 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Proyecto 1 — Guías de bastionado (BIOS/UEFI & GRUB)</title>
+  <style>
+    :root{
+      --bg:#0e1625;
+      --card:#141f33;
+      --accent:#3b82f6;
+      --accent-light:#60a5fa;
+      --muted:#9ca3af;
+      --text:#e5e7eb;
+      --glass:rgba(255,255,255,0.05);
+    }
+    *{box-sizing:border-box;}
+    html,body{
+      height:100%;
+      margin:0;
+      font-family:'Inter', ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+      background:linear-gradient(180deg, #0b1220 0%, #111b2d 100%);
+      color:var(--text);
+    }
+    main{
+      display:flex;
+      flex-direction:column;
+      align-items:center;
+      justify-content:center;
+      padding:2rem;
+      max-width:1000px;
+      margin:auto;
+    }
+    header{
+      text-align:center;
+      margin-bottom:2rem;
+    }
+    h1{
+      font-size:1.8rem;
+      margin-bottom:0.5rem;
+    }
+    p.lead{
+      color:var(--muted);
+      margin:0 auto;
+      max-width:700px;
+    }
+    .grid{
+      display:grid;
+      grid-template-columns:repeat(auto-fit, minmax(300px,1fr));
+      gap:1.5rem;
+      width:100%;
+    }
+    .card{
+      background:var(--card);
+      border-radius:16px;
+      padding:1.5rem;
+      box-shadow:0 8px 20px rgba(0,0,0,0.4);
+      border:1px solid rgba(255,255,255,0.05);
+      transition:transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .card:hover{
+      transform:translateY(-4px);
+      box-shadow:0 12px 24px rgba(0,0,0,0.6);
+    }
+    .card a{
+      text-decoration:none;
+      color:inherit;
+      display:flex;
+      flex-direction:column;
+      justify-content:space-between;
+      height:100%;
+    }
+    .card h2{
+      font-size:1.2rem;
+      margin:0 0 0.5rem 0;
+      color:var(--accent-light);
+    }
+    .muted{
+      color:var(--muted);
+      font-size:0.9rem;
+    }
+    .actions{
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      margin-top:1rem;
+    }
+    .btn{
+      background:var(--accent);
+      border:none;
+      color:white;
+      padding:0.6rem 1rem;
+      border-radius:10px;
+      font-weight:600;
+      cursor:pointer;
+      transition:background 0.3s ease, transform 0.2s ease;
+    }
+    .btn:hover{
+      background:var(--accent-light);
+      transform:translateY(-2px);
+    }
+    details{
+      margin-top:2rem;
+      background:var(--glass);
+      padding:1rem;
+      border-radius:12px;
+      border:1px solid rgba(255,255,255,0.08);
+    }
+    summary{
+      cursor:pointer;
+      font-weight:600;
+      color:var(--accent-light);
+    }
+    pre{
+      background:rgba(0,0,0,0.3);
+      padding:1rem;
+      border-radius:8px;
+      overflow-x:auto;
+      color:var(--muted);
+      font-size:0.85rem;
+    }
+    footer{
+      margin-top:1.5rem;
+      color:var(--muted);
+      font-size:0.85rem;
+      text-align:center;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <h1>Proyecto 1 — Guías para bastionar BIOS/UEFI y GRUB</h1>
+      <p class="lead">Enlaces a las prácticas entregadas y resumen del enunciado del proyecto.</p>
+    </header>
+
+    <section class="grid">
+      <article class="card">
+        <a href="https://alcinacarlos.github.io/Proyecto1-BRS/CIFRADO-GRUB/grub-debian/#0" target="_blank" rel="noopener noreferrer">
+          <div>
+            <h2>🔐 Bastionado del arranque (GRUB - Debian)</h2>
+            <p class="muted">Guía para proteger GRUB 2 en Debian: contraseñas, ocultar menú, permisos y generación de hash pbkdf2.</p>
+          </div>
+          <div class="actions">
+            <button class="btn">Abrir práctica</button>
+            <span class="muted">Se abre en nueva pestaña</span>
+          </div>
+        </a>
+      </article>
+
+      <article class="card">
+        <a href="https://alcinacarlos.github.io/Proyecto1-BRS/BIOS-UEFI/bios-uefi" target="_blank" rel="noopener noreferrer">
+          <div>
+            <h2>🧩 Protección de la BIOS/UEFI</h2>
+            <p class="muted">Guía para configurar contraseñas, deshabilitar arranques externos, orden seguro y Secure Boot.</p>
+          </div>
+          <div class="actions">
+            <button class="btn">Abrir práctica</button>
+            <span class="muted">Se abre en nueva pestaña</span>
+          </div>
+        </a>
+      </article>
+    </section>
+
+    <details>
+      <summary>📘 Resumen del enunciado y objetivo</summary>
+      <p class="muted">Esta práctica tiene dos partes: (1) elaborar una guía para bastionar la BIOS/UEFI del equipo; (2) elaborar una guía para bastionar el arranque de un sistema Debian. Ambas se publican en GitHub Pages en formato CodeLab.</p>
+      <pre>
+Criterios principales:
+- Contraseña Power-On / Usuario / Administrador BIOS
+- Evitar arranques externos y ordenar el arranque
+- Otras opciones de seguridad BIOS/UEFI
+- Ocultar menú GRUB y añadir contraseña de acceso
+- Copia de seguridad de configuración de arranque
+      </pre>
+    </details>
+
+  </main>
+</body>
+</html>
